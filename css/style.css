@@ -1,0 +1,97 @@
+:root {
+  --bg: #0f172a;
+  --bg-light: #f8fafc;
+  --card: #111827;
+  --text: #e5e7eb;
+  --text-light: #0f172a;
+  --accent: #38bdf8;
+}
+
+body.light {
+  background: var(--bg-light);
+  color: var(--text-light);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 8%;
+  background: #020617;
+}
+
+.logo span {
+  color: var(--accent);
+}
+
+nav a {
+  margin-left: 1.2rem;
+  text-decoration: none;
+  color: #94a3b8;
+}
+
+nav a.active,
+nav a:hover {
+  color: var(--accent);
+}
+
+.hero {
+  height: 85vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero span {
+  color: var(--accent);
+}
+
+.btn {
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
+  text-decoration: none;
+  margin: 0.4rem;
+}
+
+.primary {
+  background: var(--accent);
+  color: #020617;
+}
+
+.secondary {
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+
+.page {
+  padding: 4rem 10%;
+}
+
+.project-card {
+  background: var(--card);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-top: 1.2rem;
+}
+
+.fade-in {
+  animation: fade 0.8s ease;
+}
+
+@keyframes fade {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: #94a3b8;
+}
