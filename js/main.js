@@ -1,7 +1,13 @@
 const toggle = document.getElementById("themeToggle");
 
+// Function to close the popup
+function closePopup() {
+  document.getElementById('work-in-progress-popup').style.display = 'none';
+}
+
+// Show the popup automatically when the page loads
 window.addEventListener('DOMContentLoaded', () => {
-  alert('This website is a work in progress.');
+  document.getElementById('work-in-progress-popup').style.display = 'flex';
 });
 
 toggle?.addEventListener("click", () => {
