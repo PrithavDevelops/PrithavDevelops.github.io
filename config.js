@@ -81,7 +81,7 @@ const portfolioConfig = {
   // Social Links
   socials: [
     { name: "GitHub", url: "https://github.com/PrithavDevelops" },
-    { name: "LinkedIn", url: "https://www.linkedin.com/in/prithavjha" },
+    { name: "LinkedIn", url: "https://www.linkedin.com/in/prithav" },
     { name: "Email", url: "mailto:prithav.develops@gmail.com" }
   ],
 
