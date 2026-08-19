@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, height=device-height, initial-scale=1.0" />
+  <title>prithav — learning to build cool stuffs</title>
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="prithav — learning to build cool stuffs. Projects, skills, and more." />
+  <meta name="keywords" content="prithav, developer, C, HTML, CSS, JavaScript, portfolio" />
+  <meta name="author" content="prithav" />
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="prithav — learning to build cool stuffs" />
+  <meta property="og:description" content="prithav — learning to build cool stuffs." />
+  <meta property="og:image" content="avatar.jpg" />
+
+  <link rel="icon" type="image/png" href="avatar.jpg" />
+
+  <!-- Preconnect Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Load Central Configuration -->
+  <script src="config.js"></script>
+</head>
+
+<body>
+
+  <main>
+    <!-- Top Navbar Controls -->
+    <div class="top-nav">
+      <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Theme">
+        <span id="theme-icon">🌙</span> <span id="theme-label">Dark</span>
+      </button>
+    </div>
+
+    <!-- Header Section -->
+    <div class="intro-block">
+      <header>
+        <div class="avatar-wrapper">
+          <a href="#" class="dev-message-badge" id="dev-badge">
+            <span id="dev-badge-text">learning & building</span>
+            <span id="dev-badge-emoji">🚀</span>
+          </a>
+          <div class="avatar">
+            <img id="avatar-img" src="avatar.jpg" alt="prithav" />
+          </div>
+        </div>
+        <span class="handle" id="user-handle">@prithav</span>
+      </header>
+
+      <!-- Dynamic Rotating Greeting -->
+      <h1>
+        <div class="animated-greeting-wrapper" id="greeting-wrapper">
+          <!-- Populated by script.js -->
+        </div>
+      </h1>
+
+      <!-- Bio -->
+      <p id="bio-lead">
+        learning to build cool stuffs.
+      </p>
+
+      <!-- GitHub Link -->
+      <p>
+        find my work on <a href="https://github.com/PrithavDevelops" target="_blank">GitHub</a>.
+      </p>
+
+      <!-- Contact -->
+      <p>
+        contact me for work at <a href="mailto:prithav.develops@gmail.com">prithav.develops@gmail.com</a>.
+      </p>
+
+    </div>
+
+    <hr />
+
+    <!-- Featured Projects Section -->
+    <div class="section-title">Projects</div>
+    <div class="projects-grid" id="projects-container">
+      <!-- Dynamic Project Cards Rendered by script.js -->
+    </div>
+
+    <!-- Skills Section -->
+    <div class="section-title">Skills & Stack</div>
+    <div class="skills-list" id="skills-container">
+      <!-- Dynamic Skill Pills Rendered by script.js -->
+    </div>
+
+    <!-- Social Links Section -->
+    <div class="section-title">Connect</div>
+    <div class="socials-bar" id="socials-container">
+      <!-- Dynamic Social Links Rendered by script.js -->
+    </div>
+  </main>
+
+  <!-- Notification Toast -->
+  <div class="toast" id="toast"></div>
+
+  <!-- Main JavaScript Logic -->
+  <script src="script.js"></script>
+</body>
+
+</html>
